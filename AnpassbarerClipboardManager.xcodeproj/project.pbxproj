@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F088B630221710C100604937 /* ClipboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F088B62F221710C100604937 /* ClipboardManager.swift */; };
+		F088B6322217156600604937 /* TransformerSelectDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F088B6312217156600604937 /* TransformerSelectDataSource.swift */; };
+		F088B6352217167200604937 /* filo.js in Resources */ = {isa = PBXBuildFile; fileRef = F088B6342217167200604937 /* filo.js */; };
+		F088B6372217168500604937 /* concat-comma.js in Resources */ = {isa = PBXBuildFile; fileRef = F088B6362217168500604937 /* concat-comma.js */; };
 		F0C334AE2215BC45007B6344 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C334AD2215BC45007B6344 /* AppDelegate.swift */; };
 		F0C334B02215BC45007B6344 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C334AF2215BC45007B6344 /* ViewController.swift */; };
 		F0C334B22215BC47007B6344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0C334B12215BC47007B6344 /* Assets.xcassets */; };
 		F0C334B52215BC47007B6344 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0C334B32215BC47007B6344 /* Main.storyboard */; };
+		F729B8FAC725F11E2D12C766 /* Pods_AnpassbarerClipboardManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A324063285C34FFD4B63A979 /* Pods_AnpassbarerClipboardManager.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39ECC7FB8F0167BF953374B5 /* Pods-AnpassbarerClipboardManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnpassbarerClipboardManager.release.xcconfig"; path = "Target Support Files/Pods-AnpassbarerClipboardManager/Pods-AnpassbarerClipboardManager.release.xcconfig"; sourceTree = "<group>"; };
+		A324063285C34FFD4B63A979 /* Pods_AnpassbarerClipboardManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnpassbarerClipboardManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B983096A6D0C6B587CAF6DFA /* Pods-AnpassbarerClipboardManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnpassbarerClipboardManager.debug.xcconfig"; path = "Target Support Files/Pods-AnpassbarerClipboardManager/Pods-AnpassbarerClipboardManager.debug.xcconfig"; sourceTree = "<group>"; };
+		F088B62F221710C100604937 /* ClipboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardManager.swift; sourceTree = "<group>"; };
+		F088B6312217156600604937 /* TransformerSelectDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerSelectDataSource.swift; sourceTree = "<group>"; };
+		F088B6342217167200604937 /* filo.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = filo.js; sourceTree = "<group>"; };
+		F088B6362217168500604937 /* concat-comma.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "concat-comma.js"; sourceTree = "<group>"; };
 		F0C334AA2215BC45007B6344 /* AnpassbarerClipboardManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnpassbarerClipboardManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C334AD2215BC45007B6344 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0C334AF2215BC45007B6344 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,17 +40,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F729B8FAC725F11E2D12C766 /* Pods_AnpassbarerClipboardManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3700ED6980EF6BD5B37FB7DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B983096A6D0C6B587CAF6DFA /* Pods-AnpassbarerClipboardManager.debug.xcconfig */,
+				39ECC7FB8F0167BF953374B5 /* Pods-AnpassbarerClipboardManager.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F088B6332217164C00604937 /* transformers */ = {
+			isa = PBXGroup;
+			children = (
+				F088B6342217167200604937 /* filo.js */,
+				F088B6362217168500604937 /* concat-comma.js */,
+			);
+			path = transformers;
+			sourceTree = "<group>";
+		};
 		F0C334A12215BC45007B6344 = {
 			isa = PBXGroup;
 			children = (
 				F0C334AC2215BC45007B6344 /* AnpassbarerClipboardManager */,
 				F0C334AB2215BC45007B6344 /* Products */,
+				3700ED6980EF6BD5B37FB7DC /* Pods */,
+				FFF77571E423D825D6232989 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,14 +86,25 @@
 		F0C334AC2215BC45007B6344 /* AnpassbarerClipboardManager */ = {
 			isa = PBXGroup;
 			children = (
+				F088B6332217164C00604937 /* transformers */,
 				F0C334AD2215BC45007B6344 /* AppDelegate.swift */,
 				F0C334AF2215BC45007B6344 /* ViewController.swift */,
 				F0C334B12215BC47007B6344 /* Assets.xcassets */,
 				F0C334B32215BC47007B6344 /* Main.storyboard */,
 				F0C334B62215BC47007B6344 /* Info.plist */,
 				F0C334B72215BC47007B6344 /* AnpassbarerClipboardManager.entitlements */,
+				F088B62F221710C100604937 /* ClipboardManager.swift */,
+				F088B6312217156600604937 /* TransformerSelectDataSource.swift */,
 			);
 			path = AnpassbarerClipboardManager;
+			sourceTree = "<group>";
+		};
+		FFF77571E423D825D6232989 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A324063285C34FFD4B63A979 /* Pods_AnpassbarerClipboardManager.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,9 +114,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0C334BA2215BC47007B6344 /* Build configuration list for PBXNativeTarget "AnpassbarerClipboardManager" */;
 			buildPhases = (
+				FEA683482FAF293CC9288375 /* [CP] Check Pods Manifest.lock */,
 				F0C334A62215BC45007B6344 /* Sources */,
 				F0C334A72215BC45007B6344 /* Frameworks */,
 				F0C334A82215BC45007B6344 /* Resources */,
+				F44DF07AD284666BEAEB841A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -121,6 +167,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F088B6372217168500604937 /* concat-comma.js in Resources */,
+				F088B6352217167200604937 /* filo.js in Resources */,
 				F0C334B22215BC47007B6344 /* Assets.xcassets in Resources */,
 				F0C334B52215BC47007B6344 /* Main.storyboard in Resources */,
 			);
@@ -128,12 +176,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F44DF07AD284666BEAEB841A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnpassbarerClipboardManager/Pods-AnpassbarerClipboardManager-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/HotKey/HotKey.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HotKey.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnpassbarerClipboardManager/Pods-AnpassbarerClipboardManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEA683482FAF293CC9288375 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnpassbarerClipboardManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F0C334A62215BC45007B6344 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F0C334B02215BC45007B6344 /* ViewController.swift in Sources */,
+				F088B630221710C100604937 /* ClipboardManager.swift in Sources */,
+				F088B6322217156600604937 /* TransformerSelectDataSource.swift in Sources */,
 				F0C334AE2215BC45007B6344 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +366,7 @@
 		};
 		F0C334BB2215BC47007B6344 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B983096A6D0C6B587CAF6DFA /* Pods-AnpassbarerClipboardManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AnpassbarerClipboardManager/AnpassbarerClipboardManager.entitlements;
@@ -288,6 +386,7 @@
 		};
 		F0C334BC2215BC47007B6344 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39ECC7FB8F0167BF953374B5 /* Pods-AnpassbarerClipboardManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AnpassbarerClipboardManager/AnpassbarerClipboardManager.entitlements;
